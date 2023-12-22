@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from "@mui/material/Button"
 import { Card, CardContent, Typography } from '@mui/material';
+import middileSound from '../../sound/middle.mp3';
 
 function getRandom(arr, nums=1) {
   var result = new Array(nums), 
@@ -25,7 +26,7 @@ function getBlankUsers(nums=1) {
 }
 
 function playDrumSound(l=1) {
-  const audio = new Audio('/sound/middle.mp3');
+  const audio = new Audio(middileSound);
   audio.volume = 0.5;
   audio.play();
 }
