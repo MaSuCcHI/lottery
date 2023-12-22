@@ -124,7 +124,7 @@ export function Lottery(
           onClick={()=>{
             setGifts(gifts.slice(1));
             const tmpArr = selectedUsers.map((user) => {return{user: user, gift: nowGift}});
-            setWinningUsers([...winningUsers, tmpArr]);
+            setWinningUsers([...winningUsers, ...tmpArr]);
             setUsers(users.filter((user) => !selectedUsers.includes(user)));
             setDisabledStartLottery(false);
           }} 
@@ -137,11 +137,14 @@ export function Lottery(
           onClick={()=>{
             // winningUsersをファイルに書き出す
             console.log(winningUsers);
-            const data = new Blob([JSON.stringify(winningUsers)], {type: 'text/json'});
+            const csvtext = winningUsers.map((user) => {
+              return `${user.user.department},${user.user.name},${user.user.reading},${user.gift.gift}`;
+            }).join("\n");
+            const data = new Blob([csvtext], {type: 'text/csv'});
             const link = document.createElement('a');
             document.body.appendChild(link);
             link.href = window.URL.createObjectURL(data);
-            link.setAttribute('download', '抽選当選者一覧.json');
+            link.setAttribute('download', '抽選当選者一覧.csv');
             link.click();
           }}
           >
