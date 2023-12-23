@@ -5,6 +5,7 @@ import { Card, CardContent, FormControl, FormControlLabel, FormLabel, RadioGroup
 import shortSound from '../../sound/short.mp3';
 import middileSound from '../../sound/middle.mp3';
 import longSound from '../../sound/long.mp3';
+import Cofetti from 'react-confetti';
 
 function getRandom(arr, nums=1) {
   var result = new Array(nums), 
@@ -76,6 +77,14 @@ export function Lottery(
       <h1>
         抽選会
       </h1>
+      {!disabledStartLottery ? null : 
+      <Cofetti
+        width={window.innerWidth}
+        height={window.innerHeight}
+        run={disabledStartLottery}
+        numberOfPieces={drumrollLength==="long" ? 360 : 60}
+      />
+      }
       <div style={{height:"90%", width:"100%", display: "flex", flexDirection: 'column', alignItems: "center", justifyContent: "center"}}>
         <Card sx={{ minWidth: "50%"}}>
             <CardContent> 
