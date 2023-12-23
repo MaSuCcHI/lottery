@@ -74,9 +74,6 @@ export function Lottery(
 
   return (
     <div style={{height:"100%",backgroundColor:"yellow", textAlign:"center"}}>
-      <h1>
-        抽選会
-      </h1>
       {!disabledStartLottery ? null : 
       <Cofetti
         width={window.innerWidth}
@@ -88,7 +85,7 @@ export function Lottery(
       <div style={{height:"90%", width:"100%", display: "flex", flexDirection: 'column', alignItems: "center", justifyContent: "center"}}>
         <Card sx={{ minWidth: "50%"}}>
             <CardContent> 
-              <Typography variant="h3" component="div">
+              <Typography variant="h4" component="div">
                 {nowGift.gift} {nowGift.unit}名様
               </Typography>
              </CardContent> 
