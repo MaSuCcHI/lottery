@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from "@mui/material/Button"
 import Radio from "@mui/material/Radio"
-import { Card, CardContent, FormControl, FormControlLabel, FormLabel, RadioGroup, Typography } from '@mui/material';
+import { Box, Card, CardContent, FormControl, FormControlLabel, FormLabel, RadioGroup, Typography } from '@mui/material';
 import shortSound from '../../sound/short.mp3';
 import middileSound from '../../sound/middle.mp3';
 import longSound from '../../sound/long.mp3';
@@ -47,6 +47,10 @@ function playDrumSound(l) {
   audio.play();
 }
 
+function splitArray(arr, size){
+  return arr.flatMap((_, i, a) => i % size ? [] : [arr.slice(i, i + size)]);
+}
+
 export function Lottery(
   { users, setUsers, winningUsers, setWinningUsers, gifts, setGifts }
 ) {  
@@ -83,13 +87,15 @@ export function Lottery(
       />
       }
       <div style={{height:"90%", width:"100%", display: "flex", flexDirection: 'column', alignItems: "center", justifyContent: "center"}}>
-        <Card sx={{ minWidth: "50%"}}>
+        <Card sx={{ minWidth: "80%", maxHeight: "90%"}}>
             <CardContent> 
               <Typography variant="h4" component="div">
                 {nowGift.gift} {nowGift.unit}名様
               </Typography>
              </CardContent> 
-            {selectedUsers.map((user, index) => (
+            { splitArray(selectedUsers, 3).map((lineUsers) => (
+              <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+              {lineUsers.map((user) => (
                 <CardContent>
                     <Typography variant="h5" color="text.secondary">
                         {user.department}
@@ -101,6 +107,8 @@ export function Lottery(
                         {user.reading}
                     </Typography>
                 </CardContent>
+              ))}
+              </Box>
             ))}
             <CardContent>
               残り {gifts.length}景品
@@ -112,7 +120,7 @@ export function Lottery(
           variant="contained"
           onClick={()=>{
             playDrumSound(drumrollLength); 
-            const soundLength = drumrollLength === "short" ? 1750 : drumrollLength === "middle" ? 3900 : 5900;
+            const soundLength = drumrollLength === "short" ? 1800 : drumrollLength === "middle" ? 3950 : 5950;
             const interval = setInterval(() => {
               setSelectedUsers(getRandom(users, nowGift.unit));
             }, 50);
