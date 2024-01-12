@@ -1,39 +1,39 @@
-department,name,reading
-OO部門XXXXXグループ,物 太郎,もの たろう
-OO部門XXXXXXXXグループ,田中 龍之介,たなか りゅうのすけ
-OO部門aaaXXXX5faXグループ,af aEadfAFAEaddsd,
-OO部門ZZZZZグループ,鈴木 花子,すずき はなこ
-OO部門BBBBBグループ,山田 太一,やまだ たいち
-OO部門CCCCCCグループ,佐藤 美香,さとう みか
-OO部門DDDDDグループ,斎藤 健太,さいとう けんた
-OO部門EEEEEEグループ,中村 みさき,なかむら みさき
-OO部門FFFFFFグループ,高橋 裕太,たかはし ゆうた
-OO部門GGGGGGグループ,渡辺 あや,わたなべ あや
-OO部門HHHHHHグループ,岡田 大輔,おかだ だいすけ
-OO部門IIIIIIグループ,村田 さやか,むらた さやか
-OO部門JJJJJJグループ,小林 勇気,こばやし ゆうき
-OO部門KKKKKKグループ,林 みゆき,はやし みゆき
-OO部門LLLLLLグループ,西田 賢一,にしだ けんいち
-OO部門MMMMMMグループ,吉田 美紀,よしだ みき
-OO部門NNNNNNグループ,橋本 優一,はしもと ゆういち
-OO部門OOOOOOグループ,井上 さとみ,いのうえ さとみ
-OO部門PPPPPPグループ,加藤 勇太,かとう ゆうた
-OO部門QQQQQQグループ,高木 美咲,たかぎ みさき
-OO部門RRRRRRグループ,町田 裕介,まちだ ゆうすけ
-OO部門SSSSSSグループ,野口 まさる,のぐち まさる
-OO部門TTTTTTグループ,小川 ひろみ,おがわ ひろみ
-OO部門UUUUUUグループ,田村 公平,たむら こうへい
-OO部門VVVVVVグループ,石井 あやか,いしい あやか
-OO部門WWWWWWグループ,小野寺 裕樹,おのでら ゆうき
-OO部門XXXXXXグループ,高田 茜,たかだ あかね
-OO部門YYYYYYグループ,石田 直樹,いしだ なおき
-OO部門ZZZZZZグループ,浜田 佳奈,はまだ かな
-OO部門111111グループ,岩崎 一馬,いわさき かずま
-OO部門222222グループ,松本 由美,まつもと ゆみ
-OO部門333333グループ,本田 翔太,ほんだ しょうた
-OO部門444444グループ,横山 真紀,よこやま まき
-OO部門555555グループ,田口 健一,たぐち けんいち
-OO部門666666グループ,石原 あきら,いしはら あきら
-OO部門777777グループ,藤井 裕子,ふじい ゆうこ
-OO部門888888グループ,高野 直人,たかの なおと
-OO部門999999グループ,梅田 まゆ,うめだ まゆ
+department,name,reading,option
+OO部門XXXXXグループ,物 太郎,もの たろう,sss
+OO部門XXXXXXXXグループ,田中 龍之介,たなか りゅうのすけ,sdaf
+OO部門aaaXXXX5faXグループ,af aEadfAFAEaddsd,dafaf
+OO部門ZZZZZグループ,鈴木 花子,すずき はなこ,dasffa
+OO部門BBBBBグループ,山田 太一,やまだ たいち,adfaFDA
+OO部門CCCCCCグループ,佐藤 美香,さとう みか,afAFAFA
+OO部門DDDDDグループ,斎藤 健太,さいとう けんた,afd asd 
+OO部門EEEEEEグループ,中村 みさき,なかむら みさき,aEadfAFAEaddsd
+OO部門FFFFFFグループ,高橋 裕太,たかはし ゆうた,asfa
+OO部門GGGGGGグループ,渡辺 あや,わたなべ あや,dafa
+OO部門HHHHHHグループ,岡田 大輔,おかだ だいすけ,dfa 
+OO部門IIIIIIグループ,村田 さやか,むらた さやか,aSDF
+OO部門JJJJJJグループ,小林 勇気,こばやし ゆうき,adf 
+OO部門KKKKKKグループ,林 みゆき,はやし みゆき,adsf 
+OO部門LLLLLLグループ,西田 賢一,にしだ けんいち,asdf 
+OO部門MMMMMMグループ,吉田 美紀,よしだ みき,aSD
+OO部門NNNNNNグループ,橋本 優一,はしもと ゆういち,af 
+OO部門OOOOOOグループ,井上 さとみ,いのうえ さとみ,adF
+OO部門PPPPPPグループ,加藤 勇太,かとう ゆうた,adfaFAsdf 
+OO部門QQQQQQグループ,高木 美咲,たかぎ みさき,a asdf 
+OO部門RRRRRRグループ,町田 裕介,まちだ ゆうすけ,adf asdf 
+OO部門SSSSSSグループ,野口 まさる,のぐち まさる,asd 
+OO部門TTTTTTグループ,小川 ひろみ,おがわ ひろみ,asD
+OO部門UUUUUUグループ,田村 公平,たむら こうへい,a 
+OO部門VVVVVVグループ,石井 あやか,いしい あやか,s
+OO部門WWWWWWグループ,小野寺 裕樹,おのでら ゆうき,daf
+OO部門XXXXXXグループ,高田 茜,たかだ あかね,asdf
+OO部門YYYYYYグループ,石田 直樹,いしだ なおき,a
+OO部門ZZZZZZグループ,浜田 佳奈,はまだ かな,s
+OO部門111111グループ,岩崎 一馬,いわさき かずま,sd
+OO部門222222グループ,松本 由美,まつもと ゆみ,ss
+OO部門333333グループ,本田 翔太,ほんだ しょうた,as
+OO部門444444グループ,横山 真紀,よこやま まき,s
+OO部門555555グループ,田口 健一,たぐち けんいち,ss
+OO部門666666グループ,石原 あきら,いしはら あきら,d
+OO部門777777グループ,藤井 裕子,ふじい ゆうこ,d
+OO部門888888グループ,高野 直人,たかの なおと,l
+OO部門999999グループ,梅田 まゆ,うめだ まゆ,eew

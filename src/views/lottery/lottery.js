@@ -77,7 +77,7 @@ export function Lottery(
 
 
   return (
-    <div style={{height:"100%",backgroundColor:"yellow", textAlign:"center"}}>
+    <div style={{height:"100%",backgroundColor:"#D51B28", textAlign:"center"}}>
       {!disabledStartLottery ? null : 
       <Cofetti
         width={window.innerWidth}
@@ -152,7 +152,7 @@ export function Lottery(
             // winningUsersをファイルに書き出す
             console.log(winningUsers);
             const csvtext = winningUsers.map((user) => {
-              return `${user.user.department},${user.user.name},${user.user.reading},${user.gift.gift}`;
+              return `${user.user.department},${user.user.name},${user.user.reading},${user.user.option},${user.gift.gift}`;
             }).join("\n");
             const data = new Blob([csvtext], {type: 'text/csv'});
             const link = document.createElement('a');
